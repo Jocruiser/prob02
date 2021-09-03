@@ -1,11 +1,12 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 int main() {
 
 //Declare variables
 float mealcost;
 float percentage;
+
 
 //ask user for variables
 std::cout << "Please input meal cost: ";
@@ -27,7 +28,7 @@ std::cout << "\nRestaurant Bill\n===================="
 	<< "\nTaxes: $" << tax 
 	<< "\nTip: $" << tip
 	<< "\n====================" 
-	<< "\nTotal: $" << total << "\n\n"; 
+	<< "\nTotal: $" << total; 
 	
 
 return 0; 
