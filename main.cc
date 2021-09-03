@@ -4,11 +4,8 @@
 int main() {
 
 //Declare variables
-int mealcost;
+float mealcost;
 float percentage;
-float tax = 0.075 * mealcost;
-float tip = mealcost * percentage;
-float total = mealcost + tax + tip;
 
 //ask user for variables
 std::cout << "Please input meal cost: ";
@@ -20,11 +17,14 @@ std::cin >> percentage;
 
 
 //display Restaurant Bill
+float tax = 0.075 * mealcost;
+float tip = mealcost * (percentage/100);
+float total = mealcost + tip + tax; 
 
-std::cout << "\n\nRestaurant Bill\n===================="
-	<< "\nSubtotal: $" << mealcost << std::setprecision(2)
-	<< "\nTaxes: $" << tax << std::setprecision(2)
-	<< "\nTip: $" << tip << std::setprecision(2)
+std::cout << "\nRestaurant Bill\n===================="
+	<< "\nSubtotal: $" << mealcost
+	<< "\nTaxes: $" << tax 
+	<< "\nTip: $" << tip
 	<< "\n====================" 
 	<< "\nTotal: $" << total << "\n\n"; 
 	
