@@ -22,6 +22,7 @@ float tip = mealcost * (percentage/100);
 float total = mealcost + tip + tax; 
 
 std::cout << "\nRestaurant Bill\n===================="
+	<< std::fixed << std::setprecision(2) // displays number with 2 decimal places
 	<< "\nSubtotal: $" << mealcost
 	<< "\nTaxes: $" << tax 
 	<< "\nTip: $" << tip
